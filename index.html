@@ -28,7 +28,8 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                       gstart: '#FF8938',
+                        gend: '#F00'
                     }
                 }
             }
@@ -44,15 +45,15 @@
 
     <header class="container mx-auto">
 
-        <div class="hero ">
-            <div class="hero-content flex-col lg:flex-row">
+        <div class="my-10">
+            <div class="flex justify-between flex-col lg:flex-row">
 
                 <div>
                     <h1 class="text-7xl font-extrabold">It's good <br>
                         tea time at The <br> Tea House</h1>
                     <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
                     </p>
-                    <button class="btn btn-primary">Explore More</button>
+                    <button class="btn to-gendrounded-full bg-gradient-to-r from-gstart to-gend text-white">Explore More<i class="fa-solid fa-arrow-up-right-dots"></i></button>
                 </div>
 
                 <div>
@@ -158,7 +159,10 @@
 
             <div class="flex-1">
                 <h3 class="text-5xl font-extrabold">Great Tea, Freshly <br> Presented</h3>
-                <p>The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
+                <p>The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It
+                    represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply
+                    appreciated by its custoers because of good words of mouth and unique customized service orginated
+                    from Taiwan.</p>
                 <h4 class="text-xl font-extrabold">Unique Taste</h4>
                 <p>A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
                 <h4 class="text-xl font-extrabold">Premium Quality</h4>
@@ -168,29 +172,112 @@
         </section>
 
         <!-- super client section -->
-        <section class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
+        <section
+            class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-gstart to-gend px-16 py-24">
 
-            <div class="space-y-5">
-                <h2 class="text-5xl font-extrabold text-white">Meet Our Super Clients</h2>
-            <p class="text-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-            <button class="btn font-bold">Show All</button>
+            <div class="flex  lg:pr-32 items-center ">
+                <div class="space-y-5 ">
+                    <h2 class="text-5xl font-extrabold text-white">Meet Our Super Clients</h2>
+                    <p class="text-white">There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered alteration in some form, by injected humour, or randomised words which
+                        don't look even slightly believable. </p>
+                    <button class="btn font-bold">Show All</button>
+                </div>
             </div>
+            <!-- review container -->
+            <div class="relative">
+                <!--next review -->
+                <div class="relative z-10 opacity-60 p-10 mb-10 rounded-lg bg-white ">
+                    <img class="absolute -top-5 -left-5 border-4 border-white rounded-full bg-white"
+                        src="./images/client.png" alt="">
+                    <p>We are providing the best and suitable home insurance services for the people who are interested
+                        to treatment</p>
+                    <h4 class="font-bold mt-5">Ilham Yuda</h4>
+                    <p class="font-medium">Businessman</p>
+                    <div class="flex justify-end">
 
-                <div>
-                    <!-- review -->
-                    <div class="relative p-10 rounded-lg bg-white ">
-                        <img class="absolute -top-5 -left-5" src="./images/client.png" alt="">
-                        <p>We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
-                        <h4 class="font-bold mt-5">Ilham Yuda</h4>
-                        <p class="font-medium">Businessman</p>
+                        <img src="./images/circles.png" alt="">
+
                     </div>
                 </div>
+                <!--current review -->
+                <div class="absolute z-20 lg:-left-24 lg:w-[430px] top-40 p-10 rounded-lg bg-white ">
+                    <img class="absolute -top-5 -left-5 border-4 border-white rounded-full bg-white"
+                        src="./images/client.png" alt="">
+                    <p>We are providing the best and suitable home insurance services for the people who are interested
+                        to treatment</p>
+                    <h4 class="font-bold mt-5">Ilham Yuda</h4>
+                    <p class="font-medium">Businessman</p>
+                    <div class="flex justify-end">
 
+                        <img src="./images/circles.png" alt="">
+
+                    </div>
+                </div>
+                <!--previous review -->
+                <div class="relative z-10 opacity-40 p-10 rounded-lg bg-white ">
+                    <img class="absolute -top-5 -left-5 border-4 border-white rounded-full bg-white"
+                        src="./images/client.png" alt="">
+                    <p>We are providing the best and suitable home insurance services for the people who are interested
+                        to treatment</p>
+                    <h4 class="font-bold mt-5">Ilham Yuda</h4>
+                    <p class="font-medium">Businessman</p>
+                    <div class="flex justify-end">
+
+                        <img src="./images/circles.png" alt="">
+
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
-    <footer>
+    <footer class=" px-48 py-14 bg-base-200 text-base-content bg-gradient-to-r from-pink-50 to-pink-50 ">
+        <div class="flex flex-col lg:flex-row justify-between my-6">
+            <img src="./images/cup.png" alt="">
+            <p>
+                <span>Ready to get strated?</span>
+                <button class="btn to-gendrounded-full bg-gradient-to-r from-gstart to-gend ">Get Started</button>
+            </p>
+        </div>
+        <div class="footer ">
+            <div>
+                <span class="footer-title">Services</span>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </div>
+            <div>
+                <span class="footer-title">Company</span>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </div>
+            <div>
+                <span class="footer-title">Legal</span>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </div>
+            <div>
+                <span class="footer-title">Newsletter</span>
+                <div class="form-control w-80">
+                    <label class="label">
+                        <span class="label-text">Enter your email address</span>
+                    </label>
+                    <div class="relative">
+                        <input type="text" placeholder="Email address" class="bg-transparent border-b-2 border-black p-4 outline-none" />
+                        <button class="btn to-gendrounded-full bg-gradient-to-r from-gstart to-gend text-white"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="mt-6 text-center">
+            <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+        </div>
     </footer>
 
 </body>
